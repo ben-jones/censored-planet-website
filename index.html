@@ -9,7 +9,7 @@
     <meta name="author" content="">
 <!--    <link rel="icon" href="icons/NetASM.ico">-->
 
-    <title>Project Name</title>
+    <title>Censored Planet</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -42,9 +42,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Project Name</a></li> 
-              <li><a href="people.html">People</a></li> 
-              <li><a href="resources.html">Resources</a></li>
+              <li class="active"><a href="#">Censored Planet</a></li> 
             </ul>
 <!--
             <ul class="nav navbar-nav navbar-right">
@@ -57,58 +55,171 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1><b>Project Name</b></h1>
-        <h2>Project Subtitle</h2>
-        <p><a class="btn btn-lg btn-primary" href="https://github.com/noise-lab" role="button">View on Github &raquo;</a></p>
+        <h1><b>Censored Planet</b></h1>
+        <h2>Investigating censorship on a global scale</h2>
+        <p><a class="btn btn-lg btn-primary"
+              href="https://github.com/noise-lab" role="button"> View
+              on Github &raquo;</a></p>
       </div>
     </div> <!-- /container -->
       
     <div class="container">
       <div class="row">
         <div class="col-md-7">
-          <h2>What is Project Name?</h2>
-          <p>Project description here.
+          <h2>What is Censored Planet?</h2>
+
+	  <p>
+	    Censored Planet’s goals are to discover what governments
+	    censor, how they restrict access, and how decisions about
+	    censorship vary across regions, countries, and
+	    time. Existing approaches cannot perform censorship
+	    measurements at a sufficient scale to answer these
+	    questions; worse, users must perform these measurements
+	    on-site, putting people at risk. We avoid these problems
+	    by building Censored Planet on top of advance network
+	    inference channels that allow researchers to measure
+	    connectivity between arbitrary endpoints, which satisfy
+	    certain basic requirements, from almost anywhere. By using
+	    these network inference channels such as idle scans, that
+	    don’t require any access to any of the machines that
+	    connectivity is tested to or from, we can shed light on
+	    entirely unexplored areas of the Internet. Our framework
+	    makes significant contributions to the current state of
+	    Internet censorship detection by trying to solve the
+	    following challenges: <br />
+
+	    <ul>
+	      <li> <b>Broad coverage from many representative vantage
+		  points. </b> We could not rely on deploying dedi-
+		  cated measurement agents, nor could we rely on
+		  recruitment of individual activist users, neither of
+		  which provide scale or broad coverage. In contrast
+		  to previous studies, we seek to perform measurements
+		  of censorship from as many vantage points as
+		  possible that don’t belong to any end users
+		  (e.g. routers). </li>
+
+	      <li><b>Cross-layer measurements</b>. Censors often
+		change the methods that they use to implement
+		censorship, so studying filtering at multiple layers
+		of the protocol stack is important. We focus on
+		TCP/IP, DNS-based filtering and Http layer, which lie
+		at the foundation of Internet connectivity and are
+		three common protocols that governments use to
+		implement censorship. </li>
+
+	      <li><b>Coordinated snapshots</b>. Many political
+		scientists want to study how censorship varies across
+		regions within a country or across countries. As a
+		result, we need better ways to conduct measurements to
+		the same set of destinations from different vantage
+		points within roughly the same time period. Doing so
+		requires designing fast, lightweight measurement
+		techniques that still yield accurate information.</li>
+
+	      <li><b>Minimal (or zero) risk to citizens</b>. Measuring
+		Internet censorship carries an existential risk for
+		citizens. Although we are not aware of any country
+		where measuring censorship is explicitly illegal,
+		measuring censorship may still subject a citizen to
+		unknown existential risks (e.g., increased
+		surveillance).  Thus we measure only from
+		infrastructure vantage points, which helps to preclude
+		any links between our measurements and users</li>
+	    </ul>
           </p>
-        </div>
-          
-        <div class="col-md-5">
-          <h3>More Details/Demo/Video</h3>
-          <!-- 4:3 aspect ratio -->
-          <div class="span4">
-              <iframe width="420" height="315" src="https://www.youtube.com/embed/EWW1pw1lhP0" frameborder="0" allowfullscreen></iframe>
-          </div>
         </div>
       </div>
-          
+
       <div class="row">
-        <div class="col-md-4">
-          <h2>Installation</h2>
-          <p>Most recommended way to get hands-on with this project is
-        through our pre-built VirtualBox VMs. Click below to download
-        our VMs.</p>  
-          <p><a class="btn btn-default" href="" role="button">
-            VM Download &raquo;</a>
-          </p>
-          </p>
-        </div>
-        <div class="col-md-5">
-          <h2>Documentation</h2>
-          <p>For more documentation, click below:</p>
-          <p><a class="btn btn-default" href="netasm-python.html" role="button">Documentation &raquo;</a>
-             &nbsp;
-          </p>
-       </div>
-          
-        <div class="col-md-3">
-          <h2>Contact</h2>
-            <p>
-              <b>Project Members</b>: <a
-          href="http://www.cs.princeton.edu/"> Project Lead</a>
-              <br>
-              <b>Contact Email</b>: lastname @ cs.princeton.edu
-            </p>
-<!--          <p><a class="btn btn-default" href="./members.html"
-          role="button">View other members &raquo;</a></p> -->
+        <div class="col-md-7">
+	  <h2> Research Papers/Talks</h2>
+	  <a href="http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/nsethics/p17.pdf">
+	    <img style="float:left;margin-right:30px;margin-bottom:20px"
+		 src="ethics.png" alt="paper"></a> The project is
+		 still ongoing but we have listed our list of talks
+		 and research papers so far:
+	  <b>Ethical Concerns for Censorship Measurement</b>
+	  [<a href="http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/nsethics/p17.pdf">pdf</a>]<br>
+	  <a href="http://www.cs.princeton.edu/~bj6/"> Ben Jones</a>,
+	  <a href="https://cs.princeton.edu/~rensafi/">Roya Ensafi</a>,
+	  <a href="https://cs.princeton.edu/~feamster/">Nick Feamster</a>,
+	  <a href="http://www.icir.org/vern/">Vern Paxson</a>, and 
+	  <a href="http://www1.icsi.berkeley.edu/~nweaver/">Nicholas Weaver</a>
+	  <br>
+	  In Proc. of: <i> Workshop on Ethics in Networked Systems Research</i>, ACM, 2015
+	  <br />
+	  <br />
+	  <b>Planet Blackout: The Reach Of Global Censorship</b>
+	  [<a href="Foci2014.pdf">slides</a>]<br>
+	  <a href="https://cs.princeton.edu/~rensafi/">Roya Ensafi</a>
+	  <br>
+	  Talk at : <i>USENIX Workshop on Freedom and Open Communications on the Internet(FOCI)</i>, 2014
+	</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7">
+	  <h2>Getting Involved</h2>
+	  <p>
+	    We want to involve a self-motivated student to help us
+	    with our Censored Planet project. We are a group of
+	    academics who have experience with successfully mentoring
+	    students over the past years. This year, we are hoping to
+	    involve a highly motivated coder with a strong web
+	    development background.
+	  </p>
+
+	<p class="front">
+	  Working for this project is rewarding for many reasons:
+	  <ul>
+	    <li>Being involved in a project that matters to humanity
+	      because we expose violations of free speech. This
+	      project will help the public understand the alarming
+	      influence of governments’ agendas in blocking
+	      information in different parts of the world.
+	    </li>
+	    <li>Working with and analyzing large amounts of data. In
+	      many future projects, you might need skills to deal with
+	      big data. We have a great deal of experience in working
+	      with such datasets.
+	    </li>
+	    <li> Getting a feeling for interdisciplinary
+	      research. Internet censorship does not just concern
+	      computer science and researchers from many different
+	      fields are working on it. In addition to software
+	      development, you will get a feeling for
+	      interdisciplinary research in general and for this field
+	      in particular.
+	    </li>
+	  </ul> &nbsp; </p>
+
+	<h3>How to Get Involved:</h3> <p class="front"> Please get in
+	touch with us early, point us to your previous programming
+	projects, and let us know if you have any questions.
+	<a href="#contact">Feel free to email us</a>. 
+	&nbsp; </p>
+
+	</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7">
+	  <h2><a name="contact" href="#contact">Contact</a></h2>
+	  <hr>
+	  <p class="front">
+	    If you have any questions or feedback, please get in touch with us!
+	  </p>
+	  <p>
+	    <a href="https://cs.princeton.edu/~rensafi/">Roya Ensafi</a>
+	    (<a href="https://www.cs.princeton.edu/~rensafi/gpg/re.asc">OpenPGP</a>)<br>
+	    <a href="http://www.cs.princeton.edu/~bj6/">Ben Jones </a>
+	    (<a href="http://www.cs.princeton.edu/~bj6/bjones.asc">OpenPGP</a>)<br>
+	    <a href="https://www.cs.berkeley.edu/~pearce/">Paul Pearce</a><br>
+	    <a href="https://cs.princeton.edu/~feamster/">Nick Feamster</a><br>
+	    <a href="http://www.icir.org/vern/">Vern Paxson</a><br>
+	    <a href="http://www1.icsi.berkeley.edu/~nweaver/">Nicholas Weaver</a>
+	  </p>
         </div>
       </div>
         
